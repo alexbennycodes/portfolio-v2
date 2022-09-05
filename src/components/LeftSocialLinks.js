@@ -24,7 +24,7 @@ export const LeftSocialLinks = () => {
       >
         <FaLinkedin className="left-social-links" />
       </a>
-      <div className="bg-lightGrey w-[2px] h-24"></div>
+      <div className="bg-white w-[2px] h-24"></div>
     </div>
   );
 };

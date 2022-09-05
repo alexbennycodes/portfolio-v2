@@ -6,7 +6,7 @@
 
 @layer components {
   .left-social-links {
-    @apply w-auto h-6 text-lightGrey cursor-pointer hover:text-themeColor hover:-translate-y-2 ease-in-out transition-all duration-500;
+    @apply w-auto h-6 text-white cursor-pointer hover:text-themeColor hover:-translate-y-2 ease-in-out transition-all duration-500;
   }
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -16,4 +16,34 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+}
+
+@layer base {
+  h1 {
+    @apply font-sans font-black text-4xl lg:text-7xl tracking-wide;
+  }
+  h2 {
+    @apply text-3xl md:text-5xl font-black;
+  }
+  /* a{
+    @apply font-serif
+  } */
+  p {
+    @apply font-sans tracking-wide;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 30, 86, 0.7);
+  border-radius: 4px;
 }

@@ -10,7 +10,7 @@ const NavLinks = ({ name, id }) => {
   return (
     <a
       href={`#${id}`}
-      className="font-serif ml-10 text-lightGrey ease-in duration-300 transition-all hover:text-themeColor capitalize"
+      className="font-serif ml-10 text-white ease-in duration-300 transition-all hover:text-themeColor capitalize"
     >
       {name}
     </a>
