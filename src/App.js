@@ -1,13 +1,19 @@
-import { AboutMeSection, HeroSection, SkillsSection } from "./components";
+import {
+  AboutMeSection,
+  HeroSection,
+  ProjectSection,
+  SkillsSection,
+} from "./components";
 import MainLayout from "./layout/MainLayout";
 
 function App() {
   return (
     <MainLayout>
-      <div className="max-w-none md:max-w-[60vw] mx-auto p-7 md:p-0">
+      <div className="max-w-none md:max-w-[60vw] mx-auto p-5 md:p-0">
         <HeroSection />
         <AboutMeSection />
         <SkillsSection />
+        <ProjectSection />
       </div>
     </MainLayout>
   );

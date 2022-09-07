@@ -24,12 +24,12 @@ const skills = [
     linkUrl: "https://sass-lang.com/",
   },
   {
-    imgUrl: "images/bootstrap.svg",
-    linkUrl: "https://getbootstrap.com/",
-  },
-  {
     imgUrl: "images/tailwind.svg",
     linkUrl: "https://tailwindcss.com/",
+  },
+  {
+    imgUrl: "images/bootstrap.svg",
+    linkUrl: "https://getbootstrap.com/",
   },
   {
     imgUrl: "images/cplusplus.svg",
@@ -50,12 +50,12 @@ const skills = [
   {
     imgUrl: "images/figma.svg",
     linkUrl: "https://www.figma.com/",
-    class:"hidden lg:flex"
+    class: "hidden lg:flex",
   },
   {
     imgUrl: "images/photoshop.svg",
     linkUrl: "https://www.adobe.com/in/products/photoshop.html",
-    class:"hidden lg:flex"
+    class: "hidden lg:flex",
   },
 ];
 
@@ -78,7 +78,7 @@ export const SkillsSection = () => {
       <h2 className="text-themeColor text-center mb-8">Skills</h2>
       <div className="flex items-center justify-between flex-wrap gap-11">
         {skills.map((skill, i) => (
-          <SkillCard data={skill} key={i}/>
+          <SkillCard data={skill} key={i} />
         ))}
       </div>
     </section>

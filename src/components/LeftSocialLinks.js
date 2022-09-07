@@ -2,7 +2,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export const LeftSocialLinks = () => {
   return (
-    <div className="hidden md:flex flex-col gap-6 fixed left-3 z-10 items-center justify-center bottom-0">
+    <div className="hidden md:flex flex-col gap-6 fixed left-5 z-10 items-center justify-center bottom-0">
       <a
         href="https://github.com/alexbennycodes"
         target="_blank"
