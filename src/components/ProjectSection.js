@@ -2,7 +2,7 @@ import { Button } from "./Button";
 
 const ProjectCard = ({ data, index }) => {
   return (
-    <div className="shadow-lg flex flex-wrap w-full mx-auto mb-20">
+    <div className="flex flex-wrap w-full mx-auto mb-20">
       <div
         className={`bg-cover bg-center w-full lg:w-2/5 h-64 lg:h-auto aspect-video relative ${
           index % 2 === 0 ? "lg:order-first" : "lg:order-last"
@@ -24,8 +24,8 @@ const ProjectCard = ({ data, index }) => {
                 {data.title}
               </h3>
               <div className="mb-2">
-                {data.tags.map((tag) => (
-                  <span class="inline-block bg-themeColor text-[0.7rem] px-2 rounded-full uppercase mr-3">
+                {data.tags.map((tag, i) => (
+                  <span className="inline-block bg-themeColor text-[0.7rem] px-2 rounded-full uppercase mr-3" key={i}>
                     {tag}
                   </span>
                 ))}

@@ -1,5 +1,6 @@
 import {
   AboutMeSection,
+  Footer,
   HeroSection,
   ProjectSection,
   SkillsSection,
@@ -14,6 +15,7 @@ function App() {
         <AboutMeSection />
         <SkillsSection />
         <ProjectSection />
+        <Footer/>
       </div>
     </MainLayout>
   );
