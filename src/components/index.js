@@ -1,5 +1,6 @@
 import { AboutMeSection } from "./AboutMeSection";
 import { Button } from "./Button";
+import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { HeroSection } from "./HeroSection";
 import { LeftSocialLinks } from "./LeftSocialLinks";
@@ -18,4 +19,5 @@ export {
   ProjectSection,
   Button,
   Footer,
+  Contact,
 };

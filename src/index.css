@@ -16,6 +16,9 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .form-input {
+    @apply block w-full border-2 border-themeColor outline-0 focus-visible:outline-themeColor p-3 rounded-none bg-transparent text-themeColor mb-4 placeholder:text-gray-500;
+  }
 }
 
 @layer base {
