@@ -4,7 +4,7 @@ import { LeftSocialLinks, Navbar, RightMailLink } from "../components";
 const MainLayout = ({ children }) => {
   return (
     <div className="bg-black">
-      {/* <div className="bg-slate-600 no-scrollbar"> */}
+    {/* <div className="bg-slate-600 no-scrollbar"> */}
       <Navbar />
       <LeftSocialLinks />
       <RightMailLink />

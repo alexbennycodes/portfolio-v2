@@ -2,8 +2,10 @@ export const HeroSection = () => {
   return (
     <section className="h-screen flex items-center justify-center" id="home">
       <div className="max-w-xl lg:max-w-none">
-        <p className="font-serif italic mb-4 text-white">Hi, my name is</p>
-        <h1 className="text-themeColor">Alex Benny.</h1>
+        <p className="font-serif italic text-white -mb-2 font-semibold text-lg">Hi, my name is</p>
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-themeColor to-[#ff163d] leading-[1.2]">
+          Alex Benny.
+        </h1>
         <h1 className="text-white">I build cool websites.</h1>
         <p className="font-sans mt-4 text-white lg:text-lg lg:max-w-xl">
           I'm a self-taught frontend developer that likes building beautiful

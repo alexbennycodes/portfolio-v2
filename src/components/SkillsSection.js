@@ -16,6 +16,14 @@ const skills = [
     linkUrl: "https://reactjs.org/",
   },
   {
+    imgUrl: "images/react-router-dom.svg",
+    linkUrl: "https://reactrouter.com/",
+  },
+  {
+    imgUrl: "images/react-query.svg",
+    linkUrl: "https://tanstack.com/query/v4",
+  },
+  {
     imgUrl: "images/nextjs.svg",
     linkUrl: "https://nextjs.org/",
   },
@@ -31,14 +39,14 @@ const skills = [
     imgUrl: "images/bootstrap.svg",
     linkUrl: "https://getbootstrap.com/",
   },
-  {
-    imgUrl: "images/cplusplus.svg",
-    linkUrl: "https://cplusplus.com/doc/tutorial/",
-  },
-  {
-    imgUrl: "images/java.svg",
-    linkUrl: "https://dev.java/learn/",
-  },
+  // {
+  //   imgUrl: "images/cplusplus.svg",
+  //   linkUrl: "https://cplusplus.com/doc/tutorial/",
+  // },
+  // {
+  //   imgUrl: "images/java.svg",
+  //   linkUrl: "https://dev.java/learn/",
+  // },
   {
     imgUrl: "images/git.svg",
     linkUrl: "https://git-scm.com/doc",

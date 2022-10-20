@@ -25,7 +25,10 @@ const ProjectCard = ({ data, index }) => {
               </h3>
               <div className="mb-2">
                 {data.tags.map((tag, i) => (
-                  <span className="inline-block bg-themeColor text-[0.7rem] px-2 rounded-full uppercase mr-3" key={i}>
+                  <span
+                    className="inline-block bg-themeColor text-[0.7rem] px-2 rounded-full uppercase mr-3"
+                    key={i}
+                  >
                     {tag}
                   </span>
                 ))}
@@ -48,11 +51,18 @@ const ProjectCard = ({ data, index }) => {
         </div>
       </div>
     </div>
-    
   );
 };
 
 const projectData = [
+  {
+    title: "World Almanac",
+    imgUrl: "images/project2.jpg",
+    tags: ["React", "React Query", "React router dom", "Tailwind", "Axios"],
+    desc: "World Almanac is an application that allows you to view detailed information about all of the countries in the world. You may also filter by area and use the search option to locate the nation you're searching for. The relevant data is retrieved via the Rest Countries API.",
+    liveLink: "https://world-almanac.vercel.app/",
+    codeLink: "https://github.com/alexbennycodes/world-almanac-react",
+  },
   {
     title: "Weather App",
     imgUrl: "images/project4.png",
@@ -68,14 +78,6 @@ const projectData = [
     desc: "A clone of the popular Wordle Game with the added feature of unlimited play without a daily restriction. It's also responsive, so you can play it on both your smartphone and your PC. Give it a go and let me know what you think.",
     liveLink: "https://alexbennycodes.github.io/wordle-clone/",
     codeLink: "https://github.com/alexbennycodes/wordle-clone",
-  },
-  {
-    title: "World Almanac",
-    imgUrl: "images/project2.png",
-    tags: ["Bootstrap", "Javascript", "API"],
-    desc: "World Almanac is an application that allows you to view detailed information about all of the countries in the world. You may also filter by area and use the search option to locate the nation you're searching for. The relevant data is retrieved via the Rest Countries API.",
-    liveLink: "https://alexbennycodes.github.io/world-almanac",
-    codeLink: "https://github.com/alexbennycodes/world-almanac",
   },
 ];
 

@@ -4,7 +4,7 @@ import {
   HeroSection,
   ProjectSection,
   SkillsSection,
-  Contact,
+  // Contact,
 } from "./components";
 import MainLayout from "./layout/MainLayout";
 
@@ -16,7 +16,7 @@ function App() {
         <AboutMeSection />
         <SkillsSection />
         <ProjectSection />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </MainLayout>
