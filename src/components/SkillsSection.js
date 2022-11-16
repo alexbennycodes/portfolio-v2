@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 const skills = [
   {
     imgUrl: "images/html.svg",
@@ -11,17 +13,25 @@ const skills = [
     imgUrl: "images/js.svg",
     linkUrl: "https://javascript.info/",
   },
+  // {
+  //   imgUrl: "images/typescript.svg",
+  //   linkUrl: "https://www.typescriptlang.org/",
+  // },
   {
     imgUrl: "images/react.svg",
     linkUrl: "https://reactjs.org/",
   },
   {
-    imgUrl: "images/react-router-dom.svg",
-    linkUrl: "https://reactrouter.com/",
+    imgUrl: "images/redux.svg",
+    linkUrl: "https://redux-toolkit.js.org/",
   },
   {
-    imgUrl: "images/react-query.svg",
-    linkUrl: "https://tanstack.com/query/v4",
+    imgUrl: "images/tailwind.svg",
+    linkUrl: "https://tailwindcss.com/",
+  },
+  {
+    imgUrl: "images/bootstrap.svg",
+    linkUrl: "https://getbootstrap.com/",
   },
   {
     imgUrl: "images/nextjs.svg",
@@ -32,17 +42,17 @@ const skills = [
     linkUrl: "https://sass-lang.com/",
   },
   {
-    imgUrl: "images/tailwind.svg",
-    linkUrl: "https://tailwindcss.com/",
+    imgUrl: "images/react-router-dom.svg",
+    linkUrl: "https://reactrouter.com/",
   },
   {
-    imgUrl: "images/bootstrap.svg",
-    linkUrl: "https://getbootstrap.com/",
+    imgUrl: "images/react-query.svg",
+    linkUrl: "https://tanstack.com/query/v4",
   },
-  // {
-  //   imgUrl: "images/cplusplus.svg",
-  //   linkUrl: "https://cplusplus.com/doc/tutorial/",
-  // },
+  {
+    imgUrl: "images/cplusplus.svg",
+    linkUrl: "https://cplusplus.com/doc/tutorial/",
+  },
   // {
   //   imgUrl: "images/java.svg",
   //   linkUrl: "https://dev.java/learn/",
@@ -55,35 +65,28 @@ const skills = [
     imgUrl: "images/antd.svg",
     linkUrl: "https://ant.design/",
   },
-  {
-    imgUrl: "images/figma.svg",
-    linkUrl: "https://www.figma.com/",
-    class: "hidden lg:flex",
-  },
-  {
-    imgUrl: "images/photoshop.svg",
-    linkUrl: "https://www.adobe.com/in/products/photoshop.html",
-    class: "hidden lg:flex",
-  },
 ];
 
 const SkillCard = ({ data }) => {
   return (
-    <a
-      href={data.linkUrl}
-      target="_blank"
-      rel="noreferrer"
+    <Fade
+      direction="down"
+      triggerOnce
       className={`flex items-center justify-center w-1/6 max-w-[106px] min-w-[80px] aspect-square bg-black border border-themeColor rounded-xl hover:shadow-[0_5px_30px] hover:shadow-themeColor transition-all ease-in duration-400 ${data.class}`}
     >
-      <img src={data.imgUrl} alt={data.imgUrl} className="w-1/2 h-1/2" />
-    </a>
+      <a href={data.linkUrl} target="_blank" rel="noreferrer">
+        <img src={data.imgUrl} alt={data.imgUrl} />
+      </a>
+    </Fade>
   );
 };
 
 export const SkillsSection = () => {
   return (
     <section className="pb-24">
-      <h2 className="text-themeColor text-center mb-8">Skills</h2>
+      <Fade triggerOnce>
+        <h2 className="text-themeColor text-center mb-8">Skills</h2>
+      </Fade>
       <div className="flex items-center justify-between flex-wrap gap-11">
         {skills.map((skill, i) => (
           <SkillCard data={skill} key={i} />
