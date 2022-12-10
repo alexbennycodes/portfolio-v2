@@ -19,7 +19,7 @@ export const HeroSection = () => {
             and functional websites.
           </p>
           <a
-            href="#contact"
+            href="mailto:alexbenny2811@gmail.com"
             className="inline-block font-serif px-4 py-3 text-themeColor border-2 rounded  mt-6 border-themeColor transition-all duration-200 ease-in hover:bg-themeColor hover:bg-opacity-50 hover:text-white"
           >
             Contact Me
