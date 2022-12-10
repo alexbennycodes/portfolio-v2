@@ -5,7 +5,7 @@ export const HeroSection = () => {
     <section className="h-screen flex items-center justify-center" id="home">
       <div className="max-w-xl lg:max-w-none">
         <Fade direction="down" triggerOnce>
-          <p className="font-serif italic text-white -mb-2 font-semibold text-lg">
+          <p className="font-serif italic text-white md:-mb-2 font-semibold text-lg">
             Hi, my name is
           </p>
 

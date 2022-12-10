@@ -7,10 +7,10 @@ export const Footer = () => {
       <div className="text-white flex items-center gap-3">
         <BiMailSend className="h-5 w-auto" />
         <a
-          href="mailto:alexbenny@gmail.com"
+          href="mailto:alexbenny2811@gmail.com"
           className="font-serif hover:text-themeColor"
         >
-          alexbenny@gmail.com
+          alexbenny2811@gmail.com
         </a>
       </div>
       <div>

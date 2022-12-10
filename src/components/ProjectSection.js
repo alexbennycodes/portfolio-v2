@@ -4,7 +4,7 @@ import { Button } from "./Button";
 const ProjectCard = ({ data, index }) => {
   return (
     <Fade direction={index % 2 === 0 ? "left" : "right"} triggerOnce>
-      <div className="flex flex-wrap w-full mx-auto mb-20">
+      <div className="flex flex-wrap w-full mx-auto mb-10 md:mb-20">
         <div
           className={`bg-cover bg-center w-full lg:w-2/5 h-64 lg:h-auto aspect-video relative ${
             index % 2 === 0 ? "lg:order-first" : "lg:order-last"
@@ -20,15 +20,15 @@ const ProjectCard = ({ data, index }) => {
               index % 2 === 0 ? "lg:-ml-6" : "lg:-mr-6"
             }`}
           >
-            <div className="bg-darkThemeColor lg:h-full lg:min-h-[272px] px-4 py-6 -mt-6 lg:mt-0 relative mb-4 lg:mb-0  items-start text-white flex flex-col justify-center">
+            <div className="bg-darkThemeColor lg:h-full lg:min-h-[272px] px-4 py-6 lg:p-8 -mt-6 lg:mt-0 relative mb-4 lg:mb-0  items-start text-white flex flex-col justify-center">
               <div className="w-full lg:border-right lg:border-solid text-center lg:text-left">
-                <h3 className="text-themeColor text-2xl font-serif mb-2">
+                <h3 className="text-white text-3xl font-serif mb-4">
                   {data.title}
                 </h3>
                 <div className="mb-2">
                   {data.tags.map((tag, i) => (
                     <span
-                      className="inline-block bg-themeColor text-[0.7rem] px-2 rounded-full uppercase mr-3"
+                      className="inline-block bg-themeColor text-[0.75rem] px-2 rounded-full uppercase mr-3"
                       key={i}
                     >
                       {tag}
@@ -37,8 +37,8 @@ const ProjectCard = ({ data, index }) => {
                 </div>
               </div>
 
-              <div className="w-full">
-                <p className="text-sm lg:text-md">{data.desc}</p>
+              <div className="w-full my-2">
+                <p className="text-base lg:text-md">{data.desc}</p>
               </div>
 
               <div className="mt-4">
@@ -88,7 +88,7 @@ export const ProjectSection = () => {
   return (
     <section className="py-44" id="projects">
       <Fade triggerOnce>
-        <h2 className="text-center text-themeColor mb-16">Projects</h2>
+        <h2 className="text-center text-themeColor mb-12 md:mb-16">Projects</h2>
       </Fade>
       {projectData.map((data, i) => (
         <ProjectCard data={data} key={i} index={i} />

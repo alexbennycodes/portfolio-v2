@@ -65,6 +65,10 @@ const skills = [
     imgUrl: "images/antd.svg",
     linkUrl: "https://ant.design/",
   },
+  // {
+  //   imgUrl: "images/figma.svg",
+  //   linkUrl: "https://ant.design/",
+  // },
 ];
 
 const SkillCard = ({ data }) => {
@@ -72,10 +76,14 @@ const SkillCard = ({ data }) => {
     <Fade
       direction="down"
       triggerOnce
-      className={`flex items-center justify-center w-1/6 max-w-[106px] min-w-[80px] aspect-square bg-black border border-themeColor rounded-xl hover:shadow-[0_5px_30px] hover:shadow-themeColor transition-all ease-in duration-400 ${data.class}`}
+      className={`flex items-center justify-center p-6 aspect-square bg-black border border-themeColor rounded-xl hover:shadow-[0_5px_30px] hover:shadow-themeColor transition-all ease-in duration-400 ${data.class}`}
     >
       <a href={data.linkUrl} target="_blank" rel="noreferrer">
-        <img src={data.imgUrl} alt={data.imgUrl} />
+        <img
+          src={data.imgUrl}
+          alt={data.imgUrl}
+          className="aspect-square w-[60px] h-[60px] object-contain"
+        />
       </a>
     </Fade>
   );
@@ -87,7 +95,7 @@ export const SkillsSection = () => {
       <Fade triggerOnce>
         <h2 className="text-themeColor text-center mb-8">Skills</h2>
       </Fade>
-      <div className="flex items-center justify-between flex-wrap gap-11">
+      <div className="flex gap-8 lg:gap-10 justify-around items-center flex-wrap">
         {skills.map((skill, i) => (
           <SkillCard data={skill} key={i} />
         ))}

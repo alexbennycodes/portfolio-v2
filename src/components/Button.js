@@ -9,7 +9,7 @@ export const Button = ({ className, link, children }) => {
     // </a>
     <a
       href={link}
-      className="relative inline-block px-4 py-2 text-sm group mr-5"
+      className="relative inline-block px-4 py-2 text-base group mr-5"
       target="__blank"
     >
       <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-themeColor group-hover:-translate-x-0 group-hover:-translate-y-0"></span>

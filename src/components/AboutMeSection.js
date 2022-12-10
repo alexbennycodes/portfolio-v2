@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 export const AboutMeSection = () => {
   return (
     <section
-      className=" flex items-center flex-col lg:grid lg:grid-cols-3 gap-5 py-48"
+      className=" flex items-center flex-col lg:grid lg:grid-cols-3 gap-12 md:gap-5 py-48"
       id="about"
     >
       <Fade triggerOnce>
@@ -15,7 +15,7 @@ export const AboutMeSection = () => {
       </Fade>
       <div className="about-me-text lg:col-span-2 flex flex-col justify-center">
         <Fade direction="down" triggerOnce>
-          <h2 className="text-themeColor mb-4 md:text-left">About Me</h2>
+          <h2 className="text-themeColor mb-5 md:text-left">About Me</h2>
           <div className="text-white">
             <p className="mb-3">
               Hello! My name is Alex Benny and I enjoying
