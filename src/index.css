@@ -23,7 +23,7 @@
 
 @layer base {
   h1 {
-    @apply font-sans font-black text-6xl md:text-7xl tracking-wide;
+    @apply font-sans font-black text-6xl md:text-7xl lg:text-8xl tracking-wide;
   }
   h2 {
     @apply text-5xl font-serif;
